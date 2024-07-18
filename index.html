@@ -9,36 +9,26 @@
 </head>
 <body>
     <div class="topnav">
-        <h1>ESP32 Web BLE Application</h1>
+        <h1>Finding the Stick</h1>
     </div>
     <div class="content">
         <div class="card-grid">
             <div class="card">
                 <p>
-                    <button id="connectBleButton" class="connectButton"> Connect to BLE Device</button>
-                    <button id="disconnectBleButton" class="disconnectButton"> Disconnect BLE Device</button>
+                    <button id="connectBleButton" class="connectButton"> Connect to Bluetooth Device</button>
+                    <button id="disconnectBleButton" class="disconnectButton"> Disconnect Bluetooth Device</button>
                 </p>
-                <p class="gray-label">BLE state: <strong><span id="bleState" style="color:#d13a30;">Disconnected</span></strong></p>
+                <p class="gray-label">Bluetooth state: <strong><span id="bleState" style="color:#d13a30;">Disconnected</span></strong></p>
             </div>
         </div>
         <div class="card-grid">
             <div class="card">
-                <h2>Fetched Value</h2>
-                <p class="reading"><span id="valueContainer">NaN</span></p>
-                <p class="gray-label">Last reading: <span id="timestamp"></span></p>
-            </div>
-
-            <div class="card">
-                <h2>Control GPIO 2</h2>
+                <h2>Control </h2>
                 <button id="onButton" class="onButton">ON</button>
                 <button id="offButton" class="offButton">OFF</button>
                 <p class="gray-label">Last value sent: <span id="valueSent"></span></p>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <p><a href="https://randomnerdtutorials.com/">Created by RandomNerdTutorials.com</a></p>
-        <p><a href="https://RandomNerdTutorials.com/esp32-web-bluetooth/">Read the full project here.</a></p>
     </div>
 </body>
 <script>
